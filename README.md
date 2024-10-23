@@ -13,7 +13,7 @@ This library allows sending messages with rich formatting to Microsoft Teams by 
 Install with pip:
 
 ```bash
-pip install pymsteams
+pip install pymsteams-workflow
 ```
 
 ## Usage

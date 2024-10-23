@@ -3,7 +3,6 @@
 import requests
 import json
 from urllib.parse import urlparse, parse_qs
-import socket
 
 class TeamsWebhookException(Exception):
     """Custom exception for failed webhook call."""
@@ -143,8 +142,6 @@ class async_connectorcard(connectorcard):
             self.last_http_response = resp
             # Check the response
             if resp.status_code in (requests.codes.ok, requests.codes.accepted):
-                print("Message sent successfully!")
                 return True
             else:
-                print(f"Failed to send message. Status code: {resp.status_code}, Response: {resp.text}")
                 raise TeamsWebhookException(resp.text)
