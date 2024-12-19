@@ -109,14 +109,13 @@ class connectorcard:
 
             # Check the response
             if r.status_code in (requests.codes.ok, requests.codes.accepted):
-                print("Message sent successfully!")
                 return True
             else:
-                print(f"Failed to send message. Status code: {r.status_code}, Response: {r.text}")
+                # print(f"Failed to send message. Status code: {r.status_code}, Response: {r.text}")
                 raise TeamsWebhookException(r.text)
 
         except requests.exceptions.RequestException as e:
-            print(f"An error occurred: {e}")
+            # print(f"An error occurred: {e}")
             raise TeamsWebhookException(str(e))
 
 class async_connectorcard(connectorcard):
