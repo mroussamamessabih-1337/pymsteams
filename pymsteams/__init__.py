@@ -37,7 +37,7 @@ class connectorcard:
                         "body": [
                             {
                                 "type": "Image",
-                                "url": "https://github.com/caronc/apprise/raw/master/apprise/assets/themes/default/apprise-info-32x32.png",
+                                "url": "https://raw.githubusercontent.com/mroussamamessabih-1337/pymsteams/refs/heads/master/icons/informative.png",
                                 "height": "32px",
                                 "altText": "info"
                             }
