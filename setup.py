@@ -6,7 +6,7 @@ import sys
 from setuptools import setup
 from setuptools.command.install import install
 
-VERSION = "1.0.3"
+VERSION = "1.0.4"
 
 
 def readme():
@@ -36,7 +36,7 @@ setup(
     description="Format messages and post to Microsoft Teams through Microsoft Power Automate WorkFlow.",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/th3happybit/pymsteams/",
+    url="https://github.com/mroussamamessabih-1337/pymsteams/",
     author="Oussama Messabih",
     author_email="oussamamessabih02@gmail.com",
     license="Apache",
